@@ -1,4 +1,4 @@
-# Guía de Implementación: Sistema de Operaciones Bancarias (BCP_OMM_NEW)
+# Guía de Implementación
 
 Este documento detalla paso a paso todas las acciones realizadas para configurar y desarrollar el sistema de operaciones bancarias solicitado, utilizando **SQL Server**, **.NET 8 Web API** y **Entity Framework Core**.
 
@@ -6,20 +6,11 @@ Este documento detalla paso a paso todas las acciones realizadas para configurar
 
 ## 1. Configuración de la Base de Datos (SQL Server)
 
-Se creó la base de datos `BD_TRANSACCIONES_OMM_NEW` con las 4 tablas principales: `CUENTA`, `MOVIMIENTO`, `MONEDA` y `TIPO_CAMBIO`.
-
-### Estructura de Tablas:
-- **CUENTA**: Maestro de clientes con saldo.
-- **MOVIMIENTO**: Registro histórico de transacciones.
-- **MONEDA**: Catálogo de monedas (BOB, USD, etc.).
-- **TIPO_CAMBIO**: Historial de tasas de conversión entre monedas.
+Se creó la base de datos `BD`
 
 ---
 
 ## 2. Creación del Proyecto .NET
-
-1. Se creó una solución en blanco llamada `BCP_OMM_NEW`.
-2. Se agregó un proyecto de tipo **ASP.NET Core Web API** llamado `OPERACION_OMM_NEW`.
 
 ---
 

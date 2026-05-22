@@ -1,4 +1,4 @@
-# Guía de Implementación: Sistema de Operaciones Bancarias (BCP)
+# Guía de Implementación
 
 Este documento detalla paso a paso todas las acciones realizadas para configurar y desarrollar el sistema de operaciones bancarias solicitado, utilizando **SQL Server**, **.NET 8 Web API** y **Entity Framework Core**.
 
@@ -6,21 +6,7 @@ Este documento detalla paso a paso todas las acciones realizadas para configurar
 
 ## 1. Configuración de la Base de Datos (SQL Server)
 
-Se creó la base de datos `BD_TRANSACCIONES_OMM` con las tablas `CUENTA` y `MOVIMIENTO` siguiendo el diagrama del PDF.
-
-### Script SQL Principal:
-- **CUENTA**: Llave primaria `NRO_CUENTA`.
-- **MOVIMIENTO**: Llave primaria compuesta `(NRO_CUENTA, FECHA)`.
-- **Seguridad**: Se creó un login `USUARIO` con password `PASSWORD` y rol `db_owner`.
-
----
-
-## 2. Creación del Proyecto .NET
-
-1. Se creó una solución en blanco en Visual Studio 2022.
-2. Se agregó un proyecto de tipo **ASP.NET Core Web API** llamado `OPERACION_OMM`.
-
----
+Se creó la base de datos `BD` 
 
 ## 3. Instalación de Paquetes NuGet
 
