@@ -30,7 +30,7 @@ Se configuró la cadena de conexión apuntando a la instancia local de SQL Serve
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=DESKTOP-5TBM2GV\\SQLSERVER2019;Database=BD_TRANSACCIONES_OMM;User Id=USUARIO;Password=PASSWORD;TrustServerCertificate=True;"
+  "DefaultConnection": "Server=.\\SQLSERVER22;Database=BD_;User Id=user;Password=pass;TrustServerCertificate=True;"
 }
 ```
 
