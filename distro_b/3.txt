@@ -1,0 +1,32 @@
+[HttpPost("transferencia")]
+        public async Task<ActionResult<Cuenta>> Transferencia(Transferencia tra)
+        {
+            // validar que el monto sea mayor a cero y cuentas debe ser diferentes
+            // obteemos cuenta origen y destino
+            // verificar la existencia de las cuentas
+            //verificar el saldo del origen
+
+            using var tx = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                // declaramos variables y definimos
+                // logica de conversion si las monedas son distintas, buscamos el tipo de cambio
+
+                //// buscamos la conversion y tasas en tipo de cambio
+                //// verificamos que exista el tipo de cambio
+                //// si existe entonces hacemos la conversion
+                // actualizamos los saldos en las cuentas
+                //registramos/guardamos los movimientos con addRange
+
+                await _context.SaveChangesAsync();
+                await tx.CommitAsync();
+
+                return Ok(new { mensage = "realizacon con exito" });
+            }
+            catch (Exception e)
+            {
+                await tx.RollbackAsync();
+                return StatusCode(500, $"Error: {e.Message}");
+            }
+        }

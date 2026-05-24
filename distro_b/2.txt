@@ -1,0 +1,24 @@
+        // POST: api/Movimientos
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<Movimiento>> PostMovimiento(Movimiento movimiento)
+        {
+            // verificamos que el numero sea mayor a cero
+
+            using var tx = await _context.Database.BeginTransactionAsync();
+            try
+            {
+                // obtenemos la cuenta
+                // validar retiro para debito D. verificar saldo
+                // actualizarq el saldo de la cuenta: suma A, resta D
+                //guardar cambios
+
+                await tx.CommitAsync();
+                return Ok(new { mensage = "actualizado", nuevoSaldo = cta.Saldo });
+            }
+            catch (Exception)
+            {
+                await tx.RollbackAsync();
+                return StatusCode(500, new { });
+            }
+        }
