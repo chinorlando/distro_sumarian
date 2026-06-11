@@ -1,0 +1,233 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // formate el codigo despues de guardar
+  "editor.formatOnSave": true,
+  // configuracion de midudev para formatear codigo despues de guardar
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  // que al abrir vscode se maximise
+  "window.newWindowDimensions": "maximized",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.autoClosingBrackets": "always",
+  "[typescript]": {
+    "editor.autoClosingBrackets": "always"
+    // "editor.autoClosingBrackets": "languageDefined"
+  },
+  "typescript.suggest.paths": true,
+  // para importacion de modulos. en tsconfig agregar "baseUrl": "."
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[javascript]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "always"
+  },
+  "[vue]": {
+    "javascript.preferences.jsxAttributeCompletionStyle": "auto"
+  },
+  // --> autorename de las etiquetas de html en
+  // "auto-rename-tag.activationOnLanguage": [
+  //   "html",
+  //   "xml",
+  //   "php",
+  //   "javascript",
+  //   "vue"
+  // ],
+  // "javascript.preferences.renameMatchingJsxTags": true,
+  // "typescript.preferences.renameMatchingJsxTags": true,
+  // --> autorename de las etiquetas de html en
+  // // autocompletado de {}, ='' u otro en hatml
+  "javascript.preferences.jsxAttributeCompletionStyle": "auto",
+  "javascript.suggest.completeFunctionCalls": true,
+  "workbench.colorCustomizations": {
+    // "activityBar.background": "#ff0000",
+    // "activityBar.border": "#ff0000",
+    // "sideBar.border": "#ff0000",
+    // "sideBarSectionHeader.background": "#ff0000",
+    // "sideBarTitle.foreground": "#ff0000",
+    // "tab.border": "#ff0000",
+    "tab.activeBackground": "#493864",
+    "tab.activeBorder": "#160096",
+    // "scrollbarSlider.background": "#ff0000"
+    // "scrollbarSlider.activeBackground": "#ff0000"
+    // "notebookScrollbarSlider.hoverBackground": "#ff0000",
+    // "scrollbar.shadow": "#ff0000"
+    // configuracion de colores de "Bracket Pair Colorizer"
+    "editorBracketHighlight.foreground1": "#ffb86c",
+    "editorBracketHighlight.foreground2": "#8be9fd",
+    "editorBracketHighlight.foreground3": "#bd93f9",
+    "editorBracketHighlight.foreground4": "#50fa7b",
+    "editorBracketHighlight.foreground5": "#f1fa8c",
+    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  // habilitar bracket pair colorizer nativo
+  "editor.guides.highlightActiveBracketPair": true,
+  // configuracion de bienvenida al abrir vscode
+  "workbench.startupEditor": "newUntitledFile",
+  // "terminal.integrated.profiles.linux": {
+  //   "bash": {
+  //     "path": "bash",
+  //     "icon": "terminal-bash"
+  //   },
+  //   "zsh": {
+  //     "path": "zsh"
+  //   },
+  //   "fish": {
+  //     "path": "fish"
+  //   },
+  //   "tmux": {
+  //     "path": "tmux",
+  //     "icon": "terminal-tmux"
+  //   },
+  //   "pwsh": {
+  //     "path": "pwsh",
+  //     "icon": "terminal-powershell"
+  //   }
+  // },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  // oculta menu
+  "window.menuBarVisibility": "toggle",
+  // // margen al lado de la numeraicion
+  "editor.glyphMargin": false,
+  // // configuracones de activitusbar
+  "activitusbar.searchViewInPanel": false,
+  "activitusbar.combineWorkspaceSettings": true,
+  "activitusbar.toggleSidebar": false,
+  "activitusbar.views": [
+    // {
+    //   "name": "todo-tree-view",
+    //   "codicon": "list-tree",
+    //   "key": "ctrl+shift+L"
+    // },
+    {
+      "name": "explorer",
+      "codicon": "explorer-view-icon",
+      "key": "ctrl+shift+E"
+    },
+    {
+      "name": "search",
+      "codicon": "search-view-icon",
+      "key": "ctrl+shift+F"
+    },
+    {
+      "name": "scm",
+      "codicon": "source-control-view-icon",
+      "key": "ctrl+shift+T"
+    },
+    {
+      "name": "debug",
+      "codicon": "run-view-icon",
+      "key": "ctrl+shift+D"
+    },
+    {
+      "name": "extensions",
+      "codicon": "extensions-view-icon",
+      "tooltip": "Mostrar extensiones",
+      "key": "ctrl+shift+X"
+    },
+    {
+      "name": "settings",
+      "codicon": "gear",
+      "tooltip": "configuracion"
+    }
+  ],
+  // muestra la nmeracion de los cambiso que se realizan en el codigo
+  "activitusbar.showSourceControlCounter": true,
+  // // // configuraciones de todo tree
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.tree.showCountsInTree": true,
+  // "todo-tree.tree.showScanModeButton": true,
+  "todo-tree.highlights.highlightDelay": 200,
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "tag",
+    "background": "#f00",
+    "foreground": "#0a0",
+    "opacity": 50
+  },
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX"],
+  "todo-tree.filtering.includeHiddenFiles": false,
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.tree.sortTagsOnlyViewAlphabetically": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "react"
+  ],
+  "terminal.integrated.env.linux": {},
+  "editor.minimap.enabled": false,
+  // "window.zoomLevel": 1
+  // // espacion entre caracteres de forma horizontal
+  // "editor.letterSpacing": -1,
+  // // espacio arriba y abajo de cada lines de codigo
+  // "editor.lineHeight": 16
+  // // configuraciones de vscode como vim
+  "projectManager.git.baseFolders": ["$home/workspace"],
+  "projectManager.sortList": "Recent",
+  // "typescript.suggest.completeFunctionCalls": true,
+  // numeros relativos en el editor de codigo
+  // "editor.lineNumbers": "relative",
+  // reemplaza la palabra completa con la sugerencia de autocompletado
+  "editor.suggest.insertMode": "replace",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.delimiterInsideMessage": ":",
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.logMessageSuffix": "",
+  "turboConsoleLog.logMessagePrefix": "🚀🚀🚀",
+  "console-ninja.featureSet": "Community",
+  "terminal.integrated.env.windows": {},
+  "workbench.activityBar.location": "bottom",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  // supermaven
+  "supermaven.enableFixWithSupermaven": false,
+  "supermaven.enableDeleteSuggestions": true,
+  "supermaven.enableSuggestionHighlighting": true,
+  "supermaven.otherWarning": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.matchBrackets": false,
+  "workbench.editorAssociations": {
+    "*.db": "default"
+  },
+  "Devdb.colorTheme": "dark",
+  "geminicodeassist.project": "upbeat-acolyte-3lb3w",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "diffEditor.codeLens": true,
+  "update.enableWindowsBackgroundUpdates": false,
+  "chat.mcp.gallery.enabled": true,
+  "workbench.editor.enablePreview": false
+}
